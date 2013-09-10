@@ -9,14 +9,14 @@
     * |                  http://www.phpguru.org/static/license.html                  |
     * o------------------------------------------------------------------------------o
     *
-    * © Copyright 2008,2009 Richard Heyes
+    * ï¿½ Copyright 2008,2009 Richard Heyes
     */
 
     /**
     * This example includes setting a Cc: and Bcc: address
     */
 
-    require_once('Rmail.php');
+    use RMail\Rmail;
 
     /**
     * Now create the email it will be attached to
