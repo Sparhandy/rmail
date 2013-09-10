@@ -1,11 +1,16 @@
 {
     "name": "djozen/RMail",
+    "type": "library",
     "description": "Github and composer integration of this simple mailer.",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "keywords": ["mailer", "mail", "sendmail"],
     "authors": [
         {
             "name": "Johan Nagou",
             "email": "djozen97@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": { "RMail": "src/" }
+    }
 }
