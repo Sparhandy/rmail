@@ -1,0 +1,11 @@
+{
+    "name": "djozen/RMail",
+    "description": "Github and composer integration of this simple mailer.",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Johan Nagou",
+            "email": "djozen97@gmail.com"
+        }
+    ]
+}
