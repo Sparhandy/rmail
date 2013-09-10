@@ -1,4 +1,4 @@
-html-mime-mail-5
+Html Mime Mail v5
 ================
 
 Github and composer integration
