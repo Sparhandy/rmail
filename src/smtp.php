@@ -1,4 +1,5 @@
 <?php
+
     /**
     * o------------------------------------------------------------------------------o
     * | This package is licensed under the Phpguru license. A quick summary is       |
@@ -9,8 +10,10 @@
     * |                  http://www.phpguru.org/static/license.html                  |
     * o------------------------------------------------------------------------------o
     *
-    * © Copyright 2008,2009 Richard Heyes
+    * ï¿½ Copyright 2008,2009 Richard Heyes
     */
+
+namespace RMail;
 
 define('SMTP_STATUS_NOT_CONNECTED', 1, true);
 define('SMTP_STATUS_CONNECTED', 2, true);

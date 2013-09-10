@@ -9,10 +9,10 @@
     * |                  http://www.phpguru.org/static/license.html                  |
     * o------------------------------------------------------------------------------o
     *
-    * © Copyright 2008,2009 Richard Heyes
+    * ï¿½ Copyright 2008,2009 Richard Heyes
     */
 
-    require_once('Rmail.php');
+    use RMail\Rmail;
     
     $mail = new Rmail();
 

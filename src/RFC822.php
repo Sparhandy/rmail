@@ -9,8 +9,10 @@
     * |                  http://www.phpguru.org/static/license.html                  |
     * o------------------------------------------------------------------------------o
     *
-    * © Copyright 2008,2009 Richard Heyes
+    * ï¿½ Copyright 2008,2009 Richard Heyes
     */
+
+namespace RMail;
 
 /**
 * RFC 822 Email address list validation Utility

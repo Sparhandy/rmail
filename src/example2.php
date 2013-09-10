@@ -9,14 +9,14 @@
     * |                  http://www.phpguru.org/static/license.html                  |
     * o------------------------------------------------------------------------------o
     *
-    * © Copyright 2008,2009 Richard Heyes
+    * ï¿½ Copyright 2008,2009 Richard Heyes
     */
 
     /**
     * This example shows you how to create an email with another email attached
     */
 
-    require_once('Rmail.php');
+    use RMail\Rmail;
     
     /**
     * Create the attached email
