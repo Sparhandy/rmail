@@ -1,4 +1,4 @@
-Html Mime Mail v5
+RMail
 ================
 
 Github and composer integration of this simple mailer.
