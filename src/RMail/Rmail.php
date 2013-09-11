@@ -119,9 +119,9 @@ class Rmail
         */
         $this->build_params['html_encoding'] = new QPrintEncoding();
         $this->build_params['text_encoding'] = new SevenBitEncoding();
-        $this->build_params['html_charset']  = 'ISO-8859-1';
-        $this->build_params['text_charset']  = 'ISO-8859-1';
-        $this->build_params['head_charset']  = 'ISO-8859-1';
+        $this->build_params['html_charset']  = 'UTF-8';
+        $this->build_params['text_charset']  = 'UTF-8';
+        $this->build_params['head_charset']  = 'UTF-8';
         $this->build_params['text_wrap']     = 998;
 
         /**
@@ -148,7 +148,7 @@ class Rmail
         * Make sure the MIME version header is first.
         */
         $this->headers['MIME-Version'] = '1.0';
-        $this->headers['X-Mailer'] = 'Rmail <http://www.phpguru.org/>';
+        $this->headers['X-Mailer'] = 'Rmail';
     }
 
     /**
@@ -224,7 +224,7 @@ class Rmail
     * 
     * @param string $charset Character set to use
     */
-    public function setTextCharset($charset = 'ISO-8859-1')
+    public function setTextCharset($charset = 'UTF-8')
     {
         $this->build_params['text_charset'] = $charset;
     }
@@ -234,7 +234,7 @@ class Rmail
     * 
     * @param string $charset Character set to use
     */
-    public function setHTMLCharset($charset = 'ISO-8859-1')
+    public function setHTMLCharset($charset = 'UTF-8')
     {
         $this->build_params['html_charset'] = $charset;
     }
@@ -244,7 +244,7 @@ class Rmail
     * 
     * @param string $charset Character set to use
     */
-    public function setHeadCharset($charset = 'ISO-8859-1')
+    public function setHeadCharset($charset = 'UTF-8')
     {
         $this->build_params['head_charset'] = $charset;
     }
@@ -703,7 +703,7 @@ class Rmail
     * @param  string $charset Character set to use
     * @return string          Encoded value
     */
-    private function encodeHeader($input, $charset = 'ISO-8859-1')
+    private function encodeHeader($input, $charset = 'UTF-8')
     {
         preg_match_all('/(\w*[\x80-\xFF]+\w*)/', $input, $matches);
         foreach ($matches[1] as $value) {
