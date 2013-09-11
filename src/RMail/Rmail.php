@@ -363,6 +363,16 @@ class Rmail
     }
 
     /**
+     * Accessor to add a Replay To: header
+     *
+     * @param string $reply Reply To address
+     */
+    public function setReplyTo($reply)
+    {
+        $this->headers['Reply-To'] = $reply;
+    }
+
+    /**
     * Adds plain text. Use this function
     * when NOT sending html email
     * 
