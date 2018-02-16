@@ -1,5 +1,5 @@
 {
-    "name": "djozen/rmail",
+    "name": "sparhandy/rmail",
     "type": "library",
     "description": "Github and composer integration of this simple mailer.",
     "minimum-stability": "dev",
