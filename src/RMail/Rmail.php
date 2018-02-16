@@ -780,7 +780,7 @@ class Rmail
                 break;
 
             case 'smtp':
-                $smtp = &(new smtp)->connect($this->smtp_params);
+                $smtp = &smtp::connect($this->smtp_params);
 
                 // Parse recipients argument for internet addresses
                 foreach ($recipients as $recipient) {
