@@ -480,7 +480,7 @@ class Rmail
         if (!empty($message)) {
             $message->addSubpart($this->text, $params);
         } else {
-            $message = new Mail_mimePart($this->text, $params);
+            $message = new Mail_MIMEPart($this->text, $params);
         }
     }
 
@@ -499,7 +499,7 @@ class Rmail
         if (!empty($message)) {
             $message->addSubpart($this->html, $params);
         } else {
-            $message = new Mail_mimePart($this->html, $params);
+            $message = new Mail_MIMEPart($this->html, $params);
         }
     }
 
@@ -512,7 +512,7 @@ class Rmail
     {
         $params['content_type'] = 'multipart/mixed';
 
-        $message = new Mail_mimePart('', $params);
+        $message = new Mail_MIMEPart('', $params);
     }
 
     /**
@@ -528,7 +528,7 @@ class Rmail
         if (!empty($message)) {
             return $message->addSubpart('', $params);
         } else {
-            $message = new Mail_mimePart('', $params);
+            $message = new Mail_MIMEPart('', $params);
         }
     }
 
@@ -545,7 +545,7 @@ class Rmail
         if (!empty($message)) {
             return $message->addSubpart('', $params);
         } else {
-            $message = new Mail_mimePart('', $params);
+            $message = new Mail_MIMEPart('', $params);
         }
     }
 
